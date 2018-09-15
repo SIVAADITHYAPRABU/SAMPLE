@@ -1,0 +1,107 @@
+﻿<html>
+<head>
+<title>Octropess</title>
+<link rel="icon" href="E:\987.png">
+
+<body style="background-color:#669900;">
+<h1 align="center"><b>Octopress</b></h1>
+<h2 align="center">A blogging framework for hackers</h2>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#documentation">Documentation</a></li>
+  <li><a href="#help">Help</a></li>
+  <li><a href="#source">Sources</a></li>
+</ul>
+<h1 font-size="50pt"><a href="http://octopress.org/2015/01/15/octopress-3.0-is-coming/" >Octopress 3.0 is coming</a><br></h1>
+
+<p style="font-size:160%;">The way Octopress is being distributed and maintained is nearing its end. There are many things 
+I've always disliked about how Octopress works. So before I talk about the exciting part, I'd like to tell you what's wrong with Octopress.</p>
+<h2 align="left"><b>What's wrong?</b></h2>
+<p style="font-size:160%;">If I'm being harsh, I'll tell you that as it is now, Octopress is basically some guy's Jekyll blog you can fork and modify. The first, and most obvious flaw, is that Octopress is distributed through Git.
+ I want to punch through a wall when I think about users wrestling with merge conflicts from updating their sites. It’s absurd.</p>
+<p style="font-size:160%;">Octopress is released as a single product, but it's a collection of plugins and configurations which are hard to disentangle. if you want to change or remove anything you're leaving the "golden path" and updates will be painful, if not impossible — short of copy and paste. Even I can't remove things from Octopress. If I want to stop maintaining a plugin it will also disappear for anyone who updates. While some have suggested using Git tags as a kind of steam-punk versioning, that simply will not solve the real problem. 
+This isn't how software products should be distributed. Git is for collaborators; not users.</p>
+<p style="font-size:160%;">Then there are the themes. I planned to create a system for distributing themes independently from Octopress, but I hadn’t solved it when I released 2.0. Even then, I've come across quite a few websites with Octopress theme galleries.
+ While there are some nice ones, they are all distributed through git and installed with an ill-conceived rake task that was never meant to be used for this. All of this is a constant reminder that many people are spending time building on my mistakes.
+<p style="font-size:160%;">However, the part I dislike the most is the notion that Octopress and Jekyll are different communities. Because Octopress is single product with a theme, plugins, and command line automation, the best I could offer the Jekyll community was a pile of source code.
+ It was effectively a salvage yard of ideas on Jekyll blogging.
+<h2 align="left"><b>What's next?</b></h2>
+<p style="font-size:160%;">This release is a full rewrite. Octopress as it is now will be replaced by a selection of gems, each semantically versioned with is own documentation and tests. Of the gems I’ve written for this release, some are replacements for plugins that were originally integrated into Octopress and others are completely new. I will be working on a migration guide for current Octopress users, but each plugin can be used on any Jekyll site. 
+There will no longer be a division between Octopress and Jekyll.
+<p style="font-size:160%;">The Octopress CLI replaces the old Rakefile and has some new tricks too. With octopress and the octopress-deploy gem you can:
+<ol style="font-size:160%;">
+        <li>Quickly create new pages, posts, drafts, and collections.</li><br>
+        <li>Upgrade your drafts workflow with the publish and unpublish commands</li><br>
+        <li>Use templates, like: octopress new post --template sponsor.</li><br>
+        <li>Deploy via Git, Rsync, and S3.</li><br>
+</ol>
+<h2 align="left"><b>The release plan</b></h2>
+<p style="font-size:160%;">For the release, I plan to do the following:</p>
+<ol style="font-size:160%;">
+      <li>Finish Octopress Genesis</li><br>
+      <li>Write a migration guide</li><br>
+      <li>Move the master branch to the legacy branch for maintenance releases and modify rake tasks accordingly.</li><br>
+      <li>Release the new docs site.</li><br>
+      <li>Release Octopress as 3.0 and Octopress Ink as 1.0</li><br>
+</ol>
+<h1 font-size="50pt"><a href="http://octopress.org/2011/07/23/octopress-20-surfaces/" >Octopress 2.0 Surfaces</a><br></h1>
+<p style="font-size:160%;">Short answer: Everything. Octopress is now based on mojombo/jekyll has been completely rewritten from the ground up with a mountain of goodies.</p>
+ <ol style="font-size:160%;">
+        <li>A semantic HTML5 template</li><br>
+        <li>A Mobile first responsive layout</li><br>
+        <li>Built in 3rd party support for Twitter, Google Plus One, Disqus Comments, Pinboard, Delicious, and Google Analytics</li><br>
+        <li>An easy deployment strategy using Github pages or Rsync</li><br>
+        <li>Easy theming with Compass and Sass</li><br>
+</ol>
+   
+<form action="/action_page.php">
+<fieldset>
+  First name:<br>
+  <input type="text" name="firstname" value="">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="">
+  <br><br>
+ Feedback:<br>
+  <input type="text" name="feedback" value="">
+<br><br>
+  <input type="submit" value="Submit">
+ </form>
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+  </fieldset> 
+<p align="center">
+<input type="submit" value="Previous">
+<input type="submit" value="Next">
+<p align="center"><img src="E:\octropess.jfif" alt="octo">
+                           <br>      Copyrights © 2018-Brandon Mathis
+</body>
+</html>
+
